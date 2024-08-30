@@ -11,7 +11,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def generate_quiz(topic, num_questions=5, question_type="multiple_choice"):
     # Prompt untuk pilihan ganda
-    if question_type == "multiple_choice":
+    if question_type == "Pilihan Ganda":
         prompt = f"Buatlah {num_questions} pertanyaan kuis pilihan ganda dengan jawaban tentang {topic}. Sediakan 4 opsi untuk setiap pertanyaan dan tunjukkan jawaban yang benar."
     # Prompt untuk esai
     else:
